@@ -1,0 +1,52 @@
+table {
+  tbody {
+    tr {
+      background-color: #fff;
+      transition: background-color 0.2s ease-in;
+
+      // Change the color when user hover over the row
+      &:hover {
+        background-color: rgba(123, 186, 255, 0.23);
+
+        // Show action buttons
+        .actions {
+          visibility: visible;
+        }
+      }
+
+      th, td {
+        vertical-align: middle;
+        max-width: 12.5rem;
+      }
+
+      td {
+        overflow: hidden;
+        white-space: pre;
+        text-overflow: ellipsis;
+        width: 12.5rem;
+
+        &.select {
+          width: 2.5rem;
+        }
+
+        .arrow {
+          cursor: pointer;
+          transition: transform 0.2s ease-in-out;
+
+          &.expanded {
+            transform: rotate(90deg);
+          }
+        }
+      }
+
+      // Action buttons
+      .actions {
+        visibility: hidden;
+
+        &.hidden {
+          visibility: hidden;
+        }
+      }
+    }
+  }
+}

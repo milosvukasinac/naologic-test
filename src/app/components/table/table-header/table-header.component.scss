@@ -1,0 +1,13 @@
+.wrapper {
+  &:hover {
+    .bar {
+      border-right: 1px solid #000;
+    }
+  }
+
+  .bar {
+    height: 1.5rem;
+    cursor: col-resize;
+    width: 30%;
+  }
+}

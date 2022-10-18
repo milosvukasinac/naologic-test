@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {Person} from './core/person.interface';
+import {data} from './core/data';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'naologic-test';
+  // All persons
+  public persons: Person[] = data;
 }

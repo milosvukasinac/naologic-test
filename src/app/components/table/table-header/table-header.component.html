@@ -1,0 +1,9 @@
+<div class="wrapper d-flex justify-content-between">
+  <!-- Main content of the table header -->
+  <div class="content w-100">
+    <ng-content></ng-content>
+  </div>
+
+  <!-- Resizable bar -->
+  <div class="bar" (resizable)="onResize($event)"></div>
+</div>
